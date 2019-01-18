@@ -14,7 +14,7 @@
 <div class="bg-light-gray">
     <div class="contents-width mx-auto px-5 py-4">
         <div class="schedule-slider position-relative">
-            <div class="swiper-container mb-3" #swiper [swiper]="swiperConfig" (resize)="resize()">
+            <div class="swiper-container" #swiper [swiper]="swiperConfig" (resize)="resize()">
                 <div class="swiper-wrapper">
                     <div *ngFor="let scheduleDate of dates" class="swiper-slide pointer">
                         <div class="text-center text-white py-4" [class.bg-secondary]="scheduleDate !== selectedDate"
